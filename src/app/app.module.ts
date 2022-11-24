@@ -4,11 +4,13 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BookAddComponent } from './book-add/book-add.component';
+import { BookDeleteComponent } from './book-delete/book-delete.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    BookAddComponent
+    BookAddComponent,
+    BookDeleteComponent
   ],
   imports: [
     BrowserModule,
