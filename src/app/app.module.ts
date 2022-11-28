@@ -1,6 +1,5 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BookAddComponent } from './book-add/book-add.component';
@@ -14,6 +13,7 @@ import { UserRegisterComponent } from './user-register/user-register.component';
 import { BookViewComponent } from './book-view/book-view.component';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { Router, RouterModule, Routes } from '@angular/router';
+import { FormsModule } from '@angular/forms';
 
 
 const myRoute: Routes = [
@@ -72,7 +72,8 @@ const myRoute: Routes = [
   imports: [
     BrowserModule,
     AppRoutingModule,
-    RouterModule.forRoot(myRoute)
+    RouterModule.forRoot(myRoute),
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
